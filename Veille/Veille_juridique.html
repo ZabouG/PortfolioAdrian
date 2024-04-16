@@ -3,34 +3,149 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Page en Cours de Création</title>
-  <!-- Lien vers votre fichier Bulma CSS -->
-  <link rel="stylesheet" href="../bulma.css">
-  <!-- Ajoutez d'autres liens vers vos feuilles de style CSS ici si nécessaire -->
-  <link rel="stylesheet" href="styles.css">
+  <title>Adrian</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <!-- Ajout de Font Awesome pour les icônes -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <style>
+    /* Ajout de styles personnalisés */
+    .navbar-burger {
+      color: #333; /* Couleur du burger menu */
+    }
+    .navbar-item:hover {
+      background-color: #f0f0f0; /* Couleur de fond au survol */
+    }
+  </style>
 </head>
+
 <body>
+  <script src="https://www.w3schools.com/lib/w3.js"></script>
   <header>
-    <!-- Ajoutez votre en-tête ici -->
-    <h1>Titre de la Page en Cours de Création</h1>
-    <nav>
-      <ul>
-        <li><a href="../index.html">Accueil</a></li>
-        <li><a href="../propos.html">À Propos</a></li>
-      </ul>
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="index.html">
+          <img src="image/ADRIAN.png" width="112" height="28" alt="Logo">
+        </a>
+        <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+
+      <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-start">
+          <a class="navbar-item" href="index.html">
+            <span class="icon-text">
+              <span class="icon">
+                <i class="fas fa-home"></i>
+              </span>
+              <span>Home</span>
+            </span>
+          </a>
+          <a class="navbar-item" href="propos.html">A propos</a>
+          <a class="navbar-item" href="formation.html">Mes fomrations</a>
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link">Mes projets</a>
+            <div class="navbar-dropdown">
+              <a class="navbar-item" href="projet/projetsPro.html">Atelier Professionalisation</a>
+              <a class="navbar-item" href="projet/projetsPerso.html">Projet Personnel</a>
+            </div>
+          </div>
+          
+        </div>
+        <div class="navbar-end">
+          <div class="navbar-item">
+            <div class="buttons">
+              <a class="button is-primary" href="https://github.com/ZabouG" target="_blank">
+                <strong>GitHub</strong>
+              </a>
+              <a class="button is-light" href="https://drive.google.com/file/d/1ZP9gnxlCSig8onKFRXLzSIcVdDZY1Ikb/view?usp=drive_link" target="_blank">CV</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </nav>
   </header>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // Récupère tous les éléments de la classe navbar-burger
+      const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+      // Vérifie si des éléments navbar-burger existent
+      if ($navbarBurgers.length > 0) {
+        // Ajoute un écouteur d'événement click à chaque élément navbar-burger
+        $navbarBurgers.forEach(el => {
+          el.addEventListener('click', () => {
+            // Récupère la cible à partir de l'attribut data-target
+            const target = el.dataset.target;
+            const $target = document.getElementById(target);
+            // Change la classe 'is-active' sur les éléments navbar-burger et navbar-menu
+            el.classList.toggle('is-active');
+            $target.classList.toggle('is-active');
+          });
+        });
+      }
+    });
+  </script>
   <main>
-    <!-- Ajoutez votre contenu principal ici -->
+
     <section>
-      <h2>Contenu Principal</h2>
-      <p>Ce contenu est en cours de création...</p>
-      <p>Sujet de la veille : <b>Droit d'auteur pour les programme fait a l'aide d'IA</b></p>
+      <h2>Sujet : Droit d'auteur pour les programme fait a l'aide d'IA</h2>
+      <!--BLOC -->
+      <div class="container">
+        <div class="content">
+          <h3>Droit d'auteur sur l'IA</h3>
+          <p>En France, une proposition de loi a été présentée pour réglementer l'utilisation de l'IA dans le domaine du droit d'auteur. Cette proposition de loi vise à encadrer la création d'œuvres générées par l'IA et prévoit des mesures telles que l'obligation d'indiquer que l'œuvre a été générée par l'IA et la titularité des droits d'auteur revenant aux auteurs ou ayants droit des œuvres qui ont permis de concevoir l'œuvre artificielle .</p>
+          <button class="button is-primary" href="https://www.village-justice.com/articles/plateforme-generative-droits-auteur,47420.html">Source</button>
+        </div>
+      </div>
+      <!--Fin BLOC-->
+
+      <!--BLOC -->
+      <div class="container">
+        <div class="content">
+          <h3>propriété intellectuelle</h3>
+          <p>Selon l'article L.112-1 du Code de la propriété intellectuelle en France, les œuvres de l'esprit sont protégées par le droit d'auteur, à condition qu'elles soient des créations originales. Cela inclut les programmes créés à l'aide de l'IA, à condition qu'ils soient considérés comme des créations originales.
+          </p>
+          <button class="button is-primary" href="https://blog.hubspot.fr/marketing/intelligence-artificielle-loi">Source</button>
+        </div>
+      </div>
+      <!--Fin BLOC-->
+
+      <!--BLOC -->
+      <div class="container">
+        <div class="content">
+          <h3>propriété intellectuelle</h3>
+          <p>Le Règlement général sur la protection des données (RGPD) de l'Union européenne peut également avoir des implications pour les programmes créés à l'aide de l'IA. Le RGPD encadre le traitement des données personnelles et vise à protéger la vie privée des individus. Il est important de respecter les principes du RGPD lors de la collecte, du traitement et de l'utilisation des données personnelles dans les programmes d'IA
+          </p>
+          <button class="button is-primary" href="https://www.economie.gouv.fr/entreprises/reglement-general-protection-donnees-rgpd">Source</button>
+        </div>
+      </div>
+      <!--Fin BLOC-->
+
+      <!--BLOC -->
+      <div class="container">
+        <div class="content">
+          <h3>Résumé</h3>
+          <p>Élément en prendre en compte :
+            Obligation d’indiqué si l’œuvre a été réalisé à l’aide d’une IA, le droit d’auteur revient à celui qui a utilisé l’IA et non au créateur de l'IA
+            Seulement si c’est une création originelle 
+            La règle sur le RGPD s’applique évidemment sur tout programme utilisant des données à caractère personne, même si traité par une IA.
+            
+          </p>
+        </div>
+      </div>
+      <!--Fin BLOC-->
+
+      <hr>
     </section>
   </main>
-  <footer>
-    <!-- Ajoutez votre pied de page ici -->
-    <p>&copy; 2024 VotreNom. Tous droits réservés.</p>
+  <footer class="footer">
+    <div class="content has-text-centered">
+      <p>
+        <strong>Portfolio</strong> by Adrian Guichard. Le code source est sous licence <a href="http://opensource.org/licenses/mit-license.php">MIT</a>.
+      </p>
+    </div>
   </footer>
 </body>
 </html>
