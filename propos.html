@@ -1,106 +1,15 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Adrian</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-  <!-- Ajout de Font Awesome pour les icônes -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-  <style>
-    /* Ajout de styles personnalisés */
-    .navbar-burger {
-      color: #333; /* Couleur du burger menu */
-    }
-    .navbar-item:hover {
-      background-color: #f0f0f0; /* Couleur de fond au survol */
-    }
-  </style>
+  <title>A propos</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-  <script src="https://www.w3schools.com/lib/w3.js"></script>
-  <header>
-    <nav class="navbar" role="navigation" aria-label="main navigation">
-      <div class="navbar-brand">
-        <a class="navbar-item" href="index.html">
-          <img src="image/ADRIAN.png" width="112" height="28" alt="Logo">
-        </a>
-        <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-        </a>
-      </div>
-
-      <div id="navbarBasicExample" class="navbar-menu">
-        <div class="navbar-start">
-          <a class="navbar-item" href="index.html">
-            <span class="icon-text">
-              <span class="icon">
-                <i class="fas fa-home"></i>
-              </span>
-              <span>Home</span>
-            </span>
-          </a>
-          <a class="navbar-item" href="propos.html">A propos</a>
-          <a class="navbar-item" href="formation.html">Mes fomrations</a>
-          <div class="navbar-item has-dropdown is-hoverable">
-            <a class="navbar-link">Mes projets</a>
-            <div class="navbar-dropdown">
-              <a class="navbar-item" href="projet/projetsPro.html">Atelier Professionalisation</a>
-              <a class="navbar-item" href="projet/projetsPerso.html">Projet Personnel</a>
-            </div>
-          </div>
-          
-        </div>
-        <div class="navbar-end">
-          <div class="navbar-item">
-            <div class="buttons">
-              <a class="button is-primary" href="https://github.com/ZabouG" target="_blank">
-                <strong>GitHub</strong>
-              </a>
-              <a class="button is-light" href="https://drive.google.com/file/d/1ZP9gnxlCSig8onKFRXLzSIcVdDZY1Ikb/view?usp=drive_link" target="_blank">CV</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </nav>
-  </header>
-   <!-- JavaScript pour activer le burger menu -->
-   <script>
-    document.addEventListener('DOMContentLoaded', () => {
-      // Récupère tous les éléments de la classe navbar-burger
-      const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
-      // Vérifie si des éléments navbar-burger existent
-      if ($navbarBurgers.length > 0) {
-        // Ajoute un écouteur d'événement click à chaque élément navbar-burger
-        $navbarBurgers.forEach(el => {
-          el.addEventListener('click', () => {
-            // Récupère la cible à partir de l'attribut data-target
-            const target = el.dataset.target;
-            const $target = document.getElementById(target);
-            // Change la classe 'is-active' sur les éléments navbar-burger et navbar-menu
-            el.classList.toggle('is-active');
-            $target.classList.toggle('is-active');
-          });
-        });
-      }
-    });
-  </script>
-  <main>
-    <!-- Ajoutez votre contenu principal ici -->
-    <section>
-      <h2>Contenu Principal</h2>
-      <p>Ce contenu est en cours de création...</p>
-    </section>
-  </main>
-  <footer>
-    <!-- Ajoutez votre pied de page ici -->
-    <p>&copy; 2024 VotreNom. Tous droits réservés.</p>
-  </footer>
-  <script>
-    require('header.html') // Ton appli, qui fera les actions et qui poussera le contenu de ta page dans <div id="app"></div> 
-  </script>
+  <section class="MainSection" >
+    <h1 class="maintitle">A Propos</h1>
+  </section>
+  
 </body>
 </html>

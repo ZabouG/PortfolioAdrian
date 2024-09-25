@@ -173,3 +173,48 @@ body {
 .bento-card.size-row-3 {
     grid-row: span 3;
 }
+/* navbar.css */
+.navbar {
+    position: fixed;                /* Rendre la navbar fixe */
+    top: 0;                        /* Positionner en haut de l'écran */
+    left: 0;                       /* Positionner à gauche */
+    width: 100%;                   /* Prendre toute la largeur */
+    background: rgba(0, 0, 0, 0.7); /* Couleur de fond noire avec transparence */
+    color: white;                  /* Couleur du texte blanche */
+    z-index: 1000;                 /* S'assurer qu'elle est au-dessus du contenu */
+    padding: 10px 20px;            /* Espacement */
+    backdrop-filter: blur(10px);    /* Flou en arrière-plan pour un effet de profondeur */
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Bordure légère */
+    border-radius: 10px;           /* Coins arrondis */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5), /* Ombre portée */
+                0 8px 20px rgba(0, 0, 0, 0.3); /* Ombre plus diffuse */
+    transition: background 0.3s;   /* Transition pour le changement de fond */
+}
+
+.navbar:hover {
+    background: rgba(0, 0, 0, 0.9); /* Assombrir le fond au survol */
+}
+
+.navbar ul {
+    list-style: none;              /* Retirer les puces */
+    padding: 0;                    /* Enlever le padding par défaut */
+    margin: 0;                     /* Enlever la marge par défaut */
+    display: flex;                 /* Disposer les éléments en ligne */
+}
+
+.navbar li {
+    margin-right: 20px;            /* Espacement entre les éléments */
+}
+
+.navbar a {
+    color: white;                  /* Couleur du lien */
+    text-decoration: none;          /* Retirer le soulignement */
+    padding: 5px 10px;             /* Espacement autour du texte */
+    border-radius: 5px;            /* Coins arrondis pour les liens */
+    transition: background 0.3s;   /* Transition pour le changement de fond */
+}
+
+.navbar a:hover {
+    background: rgba(255, 255, 255, 0.1); /* Légère couleur au survol */
+    text-decoration: underline;     /* Soulignement au survol */
+}
