@@ -11,6 +11,22 @@
         .then(data => {
             document.body.insertAdjacentHTML('afterbegin', data);
         });
+
+
+    // Fonction pour charger les données JSON et mettre à jour le contenu
+    function loadData() {
+      fetch('data.json') // Utilisez 'data.php' si vous voulez utiliser PHP
+        .then(response => response.json())
+        .then(data => {
+          // Mettre à jour les nombres des projets
+          document.getElementById('atelierPro').textContent = data.atelierPro;
+          document.getElementById('projetPerso').textContent = data.projetPerso;
+          document.getElementById('stage').textContent = data.stage;
+        })
+        .catch(error => console.error('Erreur lors du chargement des données:', error));
+    }
+
+    document.addEventListener('DOMContentLoaded', loadData);
 </script>
 
   
@@ -79,53 +95,70 @@
     </div>
 </section>
 
+<!-- Section des projets -->
 <section class="InfoSection" id="Projet">
   <h2 class="maintitle">Projet</h2>
   <br>
   <br>
-
-  <!-- Conteneur de cartes de compétences -->
   <div class="bento-container">
-
-      <!-- Carte de compétence qui occupe 2 colonnes et 1 ligne -->
-      <div class="bento-card size-col-2">
-          <h1 class="Bento-title">Atelier profesionnalisation </h1>
-          <h1 class="NumberInfo">4</h1>
-          <a href="AtelierProfesionnel.html">
-            <br>
-            <button class="main-bouton">A propos</button>
-          </a>
-      </div>
-
-      <!-- Carte de compétence qui occupe 1 colonne et 2 lignes -->
-      <div class="bento-card">
-          <h1 class="Bento-title">Projet personnel</h1>
-          <h1 class="NumberInfo">1</h1>
-          <a href="propos.html">
-            <br>
-            <button class="main-bouton">A propos</button>
-          </a>
-      </div>
-
-      <div class="bento-card size-col-3">
-        <h1 class="Bento-title">Profesionnel</h1>
+    <div class="bento-card size-col-2">
+      <h1 class="Bento-title">Atelier profesionnalisation</h1>
+      <h1 class="NumberInfo" id="atelierPro">0</h1> <!-- L'ID est utilisé pour la mise à jour -->
+      <a href="AtelierProfesionnel.html">
         <br>
-        <h1 class="subtitle">Stage</h1>
-          <h1 class="NumberInfo">4</h1>
-          <a href="propos.html">
-            <br>
-            <button class="main-bouton">A propos</button>
-          </a>
-          <br>
-          <h1 class="subtitle">StartUP</h1>
-          <a href="propos.html">
-            <br>
-            <button class="main-bouton">A propos</button>
-          </a>
-        
+        <button class="main-bouton">A propos</button>
+      </a>
     </div>
 
+    <div class="bento-card">
+      <h1 class="Bento-title">Projet personnel</h1>
+      <h1 class="NumberInfo" id="projetPerso">0</h1> <!-- L'ID est utilisé pour la mise à jour -->
+      <a href="#">
+        <br>
+        <button class="main-bouton">A propos</button>
+      </a>
+    </div>
+
+    <div class="bento-card size-col-3">
+      <h1 class="Bento-title">Profesionnel</h1>
+      <br>
+      <h1 class="subtitle">Stage</h1>
+      <h1 class="NumberInfo" id="stage">0</h1> <!-- L'ID est utilisé pour la mise à jour -->
+      <a href="Stage.html">
+        <br>
+        <button class="main-bouton">A propos</button>
+      </a>
+    </div>
+  </div>
 </section>
+
+<section class="InfoSection" id="Projet">
+  <h2 class="maintitle">Veille</h2>
+  <br>
+  <br>
+  <div class="bento-container">
+    <div class="bento-card size-col-2">
+      <h1 class="Bento-title">Veille Juridique</h1>
+      <a href="#">
+        <br>
+        <button class="main-bouton">A propos</button>
+      </a>
+    </div>
+
+    <div class="bento-card-picture book">
+        
+    </div>
+    <div class="bento-card size-col-3">
+      <h1 class="Bento-title">Veille Technologique</h1>
+      <a href="#">
+        <br>
+        <button class="main-bouton">A propos</button>
+      </a>
+    </div>
+  </div>
+</section>
+
+
 
     
   </section>

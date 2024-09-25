@@ -22,7 +22,7 @@
                 .then(response => response.json())
                 .then(data => {
                     // Mettre à jour les nombres des projets
-                    document.getElementById('atelierPro').textContent = data.atelierPro;
+                    document.getElementById('stage').textContent = data.stage;
                 })
                 .catch(error => console.error('Erreur lors du chargement des données:', error));
         }
@@ -34,53 +34,38 @@
 <body>
     <!-- Section principale pour les stages -->
     <section class="MainSection" id="begin" >
-        <h1 class="maintitle">Atelier profesionnalisation</h1>
+        <h1 class="maintitle">Stage</h1>
         <br>
-        <h1 class="subtitle" id="atelierPro">0</h1>
+        <h1 class="subtitle" id="stage">0</h1>
         <h1>Projets</h1>
     </section>
 
-      <section class="InfoSection variante" id="Compétence">
-    
+    <!-- Section des compétences/projets -->
+    <section class="InfoSection variante" id="Compétence">
         <div class="bento-container">
-            
-            <div class="bento-card ">
-                <h1 class="Bento-title">Mr Payet</h1>
-               
-                    <p>site vitrine avec CMS : Wordpress</p>
-                    <a href="projet/mrPayet.html">
+            <div class="bento-card size-col-2">
+                <h1 class="Bento-title">Landing Page</h1>
+                <p>Stage chez Alixir</p>
+                <a href="projet/mrPayet.html">
                     <button class="main-bouton">Plus d'information</button>
-                  </a>
+                </a>
             </div>
 
-            <div class="bento-card ">
-                <h1 class="Bento-title">Application MP3</h1>
-               
-                    <p>Realisé sous Phython</p>
-                    <a href="projet/mp3.html">
+            <div class="bento-card">
+                <h1 class="Bento-title">Bot : Roll</h1>
+                <p>Stage chez Alixir</p>
+                <a href="projet/mp3.html">
                     <button class="main-bouton">Plus d'information</button>
-                  </a>
-            </div>
-
-            <div class="bento-card ">
-                <h1 class="Bento-title">Lecture FluxRSS</h1>
-               
-                    <p>Realisé en PHP</p>
-                    <a href="projet/mp3.html">
-                    <button class="main-bouton">Plus d'information</button>
-                  </a>
+                </a>
             </div>
 
             <div class="bento-card size-col-3">
-                <h1 class="Bento-title">En Cours</h1>
-               
-                    <p>Logicel de gestion pharmacie [Avec Java et JavaFX]</p>
-                    <a href="projet/mp3.html">
+                <h1 class="Bento-title">Bot : Session Manager</h1>
+                <p>Stage chez Alixir</p>
+                <a href="projet/mp3.html">
                     <button class="main-bouton">Plus d'information</button>
-                  </a>
+                </a>
             </div>
-    
-    
         </div>
     </section>
 </body>
