@@ -1,0 +1,175 @@
+/* Appliquer une mise en page par défaut au body */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: large;
+}
+
+/* Styliser la section principale pour occuper toute la hauteur */
+.MainSection {
+    background: linear-gradient(135deg, rgb(21, 21, 21), rgb(8, 8, 8));
+
+    color: rgb(255, 255, 255);
+    width: 100%;       /* Prendre toute la largeur */
+    height: 100vh;     /* Prendre toute la hauteur de l'écran */
+    display: flex;
+    flex-direction: column;  /* Disposer le contenu verticalement */
+    justify-content: center;  /* Centrer le contenu verticalement */
+    align-items: center;      /* Centrer le contenu horizontalement */
+    padding: 10%;  /* Ajuster le padding */
+    box-sizing: border-box;  /* Inclure le padding dans les dimensions */
+}
+
+.is-small {
+    width: 200px;
+    height: auto;
+}
+
+/* Style pour le titre principal */
+.maintitle {
+    font-size: 3em;
+    margin: 0;
+}
+
+/* Style pour le sous-titre */
+.subtitle {
+    font-size: 1.5em;
+    margin: 0;
+}
+
+/* Styliser la section d'information pour occuper l'espace disponible */
+.InfoSection {
+    background: linear-gradient(135deg, rgb(34, 34, 34), rgb(8, 8, 8));
+    color: rgb(147, 147, 147);
+    width: 100%;
+    padding: 5%;
+    box-sizing: border-box;  /* Inclure le padding dans la largeur */
+    font-size: 1.2em;
+}
+
+.InfoSection.variante{
+    background: linear-gradient(135deg, rgb(69, 69, 69), rgb(8, 8, 8));
+    color: rgb(147, 147, 147);
+
+}
+/* Conteneur de la grille */
+/* Conteneur de la grille */
+.bento-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 colonnes de tailles égales */
+    gap: 20px; /* Espacement entre les cartes */
+}
+
+/* Taille par défaut des bento-cards */
+.bento-card {
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(135deg, rgb(136, 147, 156), rgb(94, 104, 112)); /* Dégradé linéaire */
+    border-radius: 5%;
+    padding: 5%;
+    margin: 1%; /* Réduction de la marge pour moins d'espace entre les cartes */
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2), /* Ombre de base */
+                -5px -5px 15px rgba(255, 255, 255, 0.1); /* Ombre légère pour l'effet 3D */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Pour les effets d'animation */
+}
+
+/* Effet 3D en hover */
+.bento-card:hover {
+    transform: translateY(-10px); /* Soulève légèrement la carte */
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3), /* Ombre plus prononcée */
+                -10px -10px 20px rgba(255, 255, 255, 0.1); /* Ombre de lumière plus grande */
+}
+
+.bento-card-picture{
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+    background-position: center;
+    background-size: cover;
+    height: 200px; /* Ajustez la hauteur selon vos besoins */
+    border-radius: 5%;  
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Pour les effets d'animation */  
+    
+}
+
+.bento-card-picture:hover {
+    transform: translateY(-10px); /* Soulève légèrement la carte */
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3), /* Ombre plus prononcée */
+                -10px -10px 20px rgba(255, 255, 255, 0.1); /* Ombre de lumière plus grande */
+}
+
+.bento-card-picture.computeur{
+    background-image: url(image/Illu/Computer.png);
+    max-width: 80%; /* Ajustez la taille de l'image */
+    height: auto;
+    margin-top: 10px;
+        
+}
+
+/* Style du bouton principal */
+.main-bouton {
+    background-color: black; /* Couleur de fond noire */
+    color: white;            /* Couleur du texte blanche */
+    border: none;           /* Pas de bordure */
+    padding: 10px 20px;     /* Espacement autour du texte */
+    font-size: 1.2em;       /* Taille de police */
+    border-radius: 5px;     /* Coins arrondis */
+    cursor: pointer;         /* Curseur en forme de main au survol */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* Ombre pour l'effet 3D */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Effets d'animation */
+}
+
+/* Effet au survol pour le bouton principal */
+.main-bouton:hover {
+    transform: translateY(-3px); /* Lève légèrement le bouton */
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.7); /* Ombre plus prononcée au survol */
+}
+
+/* Style du bouton secondaire */
+.secondary-bouton {
+    background-color: white;  /* Couleur de fond blanche */
+    color: black;             /* Couleur du texte noire */
+    border: none;             /* Pas de bordure */
+    padding: 10px 20px;      /* Espacement autour du texte */
+    font-size: 1.2em;        /* Taille de police */
+    border-radius: 5px;      /* Coins arrondis */
+    cursor: pointer;          /* Curseur en forme de main au survol */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Ombre pour l'effet 3D */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Effets d'animation */
+}
+
+/* Effet au survol pour le bouton secondaire */
+.secondary-bouton:hover {
+    transform: translateY(-3px); /* Lève légèrement le bouton */
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.5); /* Ombre plus prononcée au survol */
+}
+
+
+
+/* Taille des bento-cards en fonction de leur classe */
+/* Une bento-card occupe 1, 2, ou 3 colonnes */
+.bento-card.size-col-1 {
+    grid-column: span 1;
+}
+.bento-card.size-col-2 {
+    grid-column: span 2;
+}
+.bento-card.size-col-3 {
+    grid-column: span 3;
+}
+
+/* Une bento-card occupe 1, 2, ou 3 lignes */
+.bento-card.size-row-1 {
+    grid-row: span 1;
+}
+.bento-card.size-row-2 {
+    grid-row: span 2;
+}
+.bento-card.size-row-3 {
+    grid-row: span 3;
+}

@@ -3,214 +3,107 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Adrian</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-  <!-- Ajout de Font Awesome pour les icônes -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-  <style>
-    /* Ajout de styles personnalisés */
-    .navbar-burger {
-      color: #333; /* Couleur du burger menu */
-    }
-    .navbar-item:hover {
-      background-color: #f0f0f0; /* Couleur de fond au survol */
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
+  <title>Adrian Guichard PortFolio</title>
+  
 </head>
-
 <body>
-  <script src="https://www.w3schools.com/lib/w3.js"></script>
-  <header>
-    <nav class="navbar" role="navigation" aria-label="main navigation">
-      <div class="navbar-brand">
-        <a class="navbar-item" href="index.html">
-          <img src="image/ADRIAN.png" width="112" height="28" alt="Logo">
-        </a>
-        <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-        </a>
-      </div>
-
-      <div id="navbarBasicExample" class="navbar-menu">
-        <div class="navbar-start">
-          <a class="navbar-item" href="index.html">
-            <span class="icon-text">
-              <span class="icon">
-                <i class="fas fa-home"></i>
-              </span>
-              <span>Home</span>
-            </span>
-          </a>
-          <a class="navbar-item" href="propos.html">A propos</a>
-          <a class="navbar-item" href="formation.html">Mes fomrations</a>
-          <div class="navbar-item has-dropdown is-hoverable">
-            <a class="navbar-link">Mes projets</a>
-            <div class="navbar-dropdown">
-              <a class="navbar-item" href="projet/projetsPro.html">Atelier Professionalisation</a>
-              <a class="navbar-item" href="projet/projetsPerso.html">Projet Personnel</a>
-            </div>
-          </div>
-          
-        </div>
-        <div class="navbar-end">
-          <div class="navbar-item">
-            <div class="buttons">
-              <a class="button is-primary" href="https://github.com/ZabouG" target="_blank">
-                <strong>GitHub</strong>
-              </a>
-              <a class="button is-light" href="https://drive.google.com/file/d/1ZP9gnxlCSig8onKFRXLzSIcVdDZY1Ikb/view?usp=drive_link" target="_blank">CV</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </nav>
-  </header>
-
-  <section class="section">
-    <div class="container">
-      <h1 class="title">Adrian Guichard</h1>
-      <p class="subtitle">Bienvenue sur mon <strong>Portfolio</strong> !</p>
-    </div>
+  <section class="MainSection" >
+    <h1 class="maintitle">Adrian Guichard</h1>
+    <br>
+    <h1 class="subtitle">2ème année BTS SIO | Développeur Fullstack</h1>
+    <a href="propos.html">
+      <br>
+      <button class="secondary-bouton">A propos</button>
+    </a>
   </section>
-  <section class="section">
-    <div class="container">
-      <div class="content">
-        <p>Je suis un étudiant de 18 ans en première année de <strong>BTS SIO</strong>. J'ai choisi la spécialité <strong>SLAM</strong>.</p>
-      </div>
-    </div>
-  </section>
-  <section class="section">
-    <div class="container">
-      <div class="columns is-centered">
-        <div class="column is-half">
-          <div class="card">
-            <div class="card-content">
-              <p class="title">Atelier Professionalisation</p>
-              <div class="content">
-                Projet réalisé dans le cadre de l'Atelier Professionalisation en BTS SIO.
-                <div class="buttons">
-                  <a href="projet/projetsPro.html" class="button is-primary">Voir plus</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+
+  <section class="InfoSection variante">
+    <h2 class="maintitle">Compétence</h2>
+    <br>
+    <br>
+
+    <!-- Conteneur de cartes de compétences -->
+    <div class="bento-container">
+
+        <!-- Carte de compétence qui occupe 2 colonnes et 1 ligne -->
         
-        <div class="column is-half">
-          <div class="card">
-            <div class="card-content">
-              <p class="title">Projet Personnel</p>
-              <div class="content">
-                Projet personnel réalisé en parallèle des études pour approfondir mes compétences en développement.
-                <a href="projet/projetsPerso.html" class="button is-primary">Voir plus</a>
-              </div>
-            </div>
-          </div>
+        <div class="bento-card ">
+            <h1 class="Bento-title">HTML:5</h1>
+            <img src="image/competence/HTML5.png" alt="HTML5" class="is-small">
         </div>
-      </div>
-    </div>
-  </section>
 
-  <section class="section">
-    <div class="container">
-      <div class="box">
-        <h2 class="title is-2">Mes Compétences</h2>
-        <div class="columns is-mobile is-multiline is-centered">
-          <div class="column is-narrow">
-            <p class="bd-notification is-primary">
-              <code class="html">HTML/CSS/PHP</code><br>
-              <figure class="image is-128x128">
-                <img src="https://lh3.googleusercontent.com/pw/ABLVV84Iw2egZnFJg0qNUAHxS7rrB15U49Fog9kjKMmNCPDIaT-1GBVFMxfTsCuzH6SoHOzItssNq2LDrWLaHV_9USkQx76f3TaRU3oH0keZEYMT_ddvYaNt87ukTRzuOrkS8yUtKFWHcli5eXwPaPRp-8LzkfNnFFfVZXN3dF-ZLsSVMAvVPIdshw0E2__cCGdMqb33X9E53OrtV0PlxURSXFOkAiMpiajoTw0g51S486GK0qj9GSPTCjcGxNqgUK9HYGgNU8RT7W-cMm4c_5zKAx8x0VvLoIloE5Wx24dwJYhRorVoWxG7gT9JMcpICAkkO5FWhwERsosoyEqMIkdBSUW2h47pkl0ViXWRgSmgc833_n0_T3pVzv8q0Oz5JIDlzXsW0_vEgBjsNlUIOhr57KLqr8X4AEr7q1TBMkPK8yP26LnykTxYTUHE00ntbiUtA2al5OV0oPeCfh3XZSD9FHHGTPv87NpOzEo0Iwc-5xq-T-2fNiYPpc6tC6h3gvAzE7UqKbR_1SRWrqeJ7NlW9F1fRUjkSw_OIraHfyLswPlGKCJsDxU1ou1gZNhaH470l-tFhqLI6pdunGJ_9GxmUEX9T6dlZdGOpjOjSyOn8hJciz_jZIdyCIBqa_CIc9AP3z4AzbtZyMv3_AMZDHnAFs6mfSojdLjdNZLhTn8JNJC9O1f3q4p4hPo_xXfyIRrDyRgKdMWXN6ZxUw9z4-GTMR6vL4JUbjHDWIL3XnnfqHa4rbDBgyqbaQdX4kENchfjhO7TEnrdpDMYhkDY4zcl1_x-CTO_7BQ6jMCIN3urf4K-sDpHoVYy_DmNRO-7xAMWbk_vfzwJ9Xc9lBhSZ81OxH3KM_GO4Xw2xGrf2hNN0UkKswNEKy_1-ogHN-j1OBP3QSd49PsK0CSRUEiKWDOGWeBnV8MnzbE1Dgkz-77pYweKMkLjVcKi9uXXQlRA6suqPN4knrLuhWQWdm99vyaE31WIwoh72Hjs9jTQ1xaN7pkJYVnYJcbcJGgZ3SDg2xlDkDxPzcuY4wsAVPA8P_hTdP-_xEubQM2Cu6dpjQ=w128-h128-s-no-gm?authuser=1" alt="htmlcssphp">
-              </figure>
-              <a href="Compétense/htmlcssphp.html"><button class="button is-light">Voir plus</button></a>
-            </p>
-          </div>
-          <div class="column is-narrow">
-            <p class="bd-notification is-primary">
-              <code class="html">Java</code><br>
-              <figure class="image is-128x128">
-                <img src="https://lh3.googleusercontent.com/pw/ABLVV84Iw2egZnFJg0qNUAHxS7rrB15U49Fog9kjKMmNCPDIaT-1GBVFMxfTsCuzH6SoHOzItssNq2LDrWLaHV_9USkQx76f3TaRU3oH0keZEYMT_ddvYaNt87ukTRzuOrkS8yUtKFWHcli5eXwPaPRp-8LzkfNnFFfVZXN3dF-ZLsSVMAvVPIdshw0E2__cCGdMqb33X9E53OrtV0PlxURSXFOkAiMpiajoTw0g51S486GK0qj9GSPTCjcGxNqgUK9HYGgNU8RT7W-cMm4c_5zKAx8x0VvLoIloE5Wx24dwJYhRorVoWxG7gT9JMcpICAkkO5FWhwERsosoyEqMIkdBSUW2h47pkl0ViXWRgSmgc833_n0_T3pVzv8q0Oz5JIDlzXsW0_vEgBjsNlUIOhr57KLqr8X4AEr7q1TBMkPK8yP26LnykTxYTUHE00ntbiUtA2al5OV0oPeCfh3XZSD9FHHGTPv87NpOzEo0Iwc-5xq-T-2fNiYPpc6tC6h3gvAzE7UqKbR_1SRWrqeJ7NlW9F1fRUjkSw_OIraHfyLswPlGKCJsDxU1ou1gZNhaH470l-tFhqLI6pdunGJ_9GxmUEX9T6dlZdGOpjOjSyOn8hJciz_jZIdyCIBqa_CIc9AP3z4AzbtZyMv3_AMZDHnAFs6mfSojdLjdNZLhTn8JNJC9O1f3q4p4hPo_xXfyIRrDyRgKdMWXN6ZxUw9z4-GTMR6vL4JUbjHDWIL3XnnfqHa4rbDBgyqbaQdX4kENchfjhO7TEnrdpDMYhkDY4zcl1_x-CTO_7BQ6jMCIN3urf4K-sDpHoVYy_DmNRO-7xAMWbk_vfzwJ9Xc9lBhSZ81OxH3KM_GO4Xw2xGrf2hNN0UkKswNEKy_1-ogHN-j1OBP3QSd49PsK0CSRUEiKWDOGWeBnV8MnzbE1Dgkz-77pYweKMkLjVcKi9uXXQlRA6suqPN4knrLuhWQWdm99vyaE31WIwoh72Hjs9jTQ1xaN7pkJYVnYJcbcJGgZ3SDg2xlDkDxPzcuY4wsAVPA8P_hTdP-_xEubQM2Cu6dpjQ=w128-h128-s-no-gm?authuser=1" alt="java">
-              </figure>
-              <a href="Compétense/java.html"><button class="button is-light">Voir plus</button></a>
-            </p>
-          </div>
-          <div class="column is-narrow">
-            <p class="bd-notification is-primary">
-              <code class="html">Python</code><br>
-              <figure class="image is-128x128">
-                <img src="https://lh3.googleusercontent.com/pw/ABLVV87CjTTl5G8z7eVftgeHueqlHE5QFYevNf9n9NbcNXI0vz949JgA4fbbetHJbWF-w_r7_EIO29zvjiVvGJSHTfcXrdU3qL3sVjdrLCi3KatyZqlVETjYyFU5XC6IzMEqXf26U1oG1STgBFN8XLPTr8q3Tkj9KUr4fogbAUoYQtCN7jo8UmtrHRC7IgmluyBeeNaICtHBRflGjWeA0dDRKZNgu8-w5mksIBJon_1hyxNZVFmd2M0lN7T0JY8Bhpo2eOYUxfpYux9MKIMrHmlhx7tcOJPbwPpn9_iN5DfzBRNDy1OmswbaT5TfdJctgYS7Z26cYYHBMF58thS-xIxcxC2hktUsaq9AXtuPcGoEInLntSSQuTLTGNFAH7iW8cUyAJLAbWlICOhlT3uUaMoOA9nHP9MV99J-bJvKFnWdQA-YmogW0IgGvRuHsXNeWmfzBx0pCK3GEbbbAB3a73dqnSDP0F0aZi4sJ28ANoret8PJ6VSoabHuV482ITN5eJUCF29GYBL8MWIRiAlo79UYQt2erCnXFIbolpnny0jgwXcsL5aMLLftIaPNfE5TYsWiX3mlBqIdfJi1wUUATnKi-pkgiDNsRfqHMp4a7zX1GTMfLIwjdxDh2ddoCecCzbgqAlqTAAeaU0WwRfWjtoUCnpSiqCFF96wpEjKs6ziREHEf7Nc0_-997GWhhi9b5dL6CJo1lVjwJDjS3vjwx36CcNo1rbuP0pJMY7vLKGEoQftA-uGR_eluIXXQmtuN-A--H9-1czWVb3g-IeXy0Q4upANTrMrzyjDyWlAdIJH1GbjyrDIx_q88akfp9XPFcTK5HJ1NEk21qg2VqZGBb-itoEoUAejSKOwhZmfYRmiuR2c1z8Bpu6aVD9jjTCiLSkUOFUyaIkhPeDi9B1VKULRsCIbcf5m4a0PiejUQoYhrsuw5HRTRMne5aSaPiSE3BDoB_yG7lGzx4r5TbHRWdpu0bge_9Jx-INSBRuXZyBvSueBvRMFcxu9HKgWcG740Pma75Q7WFAHopBzC8uvsNxi1TCA2ckjgb8vclIMLSA=w128-h128-s-no-gm?authuser=1" alt="python">
-              </figure>
-              <a href="Compétense/python.html"><button class="button is-light">Voir plus</button></a>
-            </p>
-          </div>
-          <!-- Ajoutez d'autres compétences ici -->
+        <!-- Carte de compétence qui occupe 1 colonne et 2 lignes -->
+        <div class="bento-card">
+            <h1 class="Bento-title">CSS:3</h1>
+            <img src="image/competence/CSS.webp" alt="CSS3" class="is-small">
         </div>
-      </div>
-    </div>
-  </section>
 
-  <section class="section">
-    <div class="container">
-      <div class="columns is-centered">
-        <div class="column is-half">
-          <div class="card">
-            <div class="card-content">
-              <p class="title">Veille Technologique</p>
-              <div class="content">
-                Sujet de veille : <b>Incorporation de l'IA dans la programmation</b>
-                <div class="buttons">
-                  <a href="projet/projetsPro.html" class="button is-primary">Voir plus</a>
-                </div>
-              </div>
-            </div>
-          </div>
+        <!-- Carte de compétence qui occupe 3 colonnes et 1 ligne -->
+        <div class="bento-card 1">
+            <h1 class="Bento-title">PHP</h1>
+            <img src="image/competence/PHP.png" alt="PHP" class="is-small">
         </div>
+
+        <!-- Autres cartes de compétences avec des tailles différentes -->
+        <div class="bento-card ">
+            <h1 class="Bento-title">JavaScript</h1>
+            <img src="image/competence/JS.png" alt="JavaScript" class="is-small">
+        </div>
+
+        <div class="bento-card ">
+          <h1 class="Bento-title">GoLang</h1>
+          <img src="image/competence/go.png" alt="JavaScript" class="is-small">
+      </div>
+
+      <div class="bento-card-picture computeur">
         
-        <div class="column is-half">
-          <div class="card">
-            <div class="card-content">
-              <p class="title">Veille juridique</p>
-              <div class="content">
-                Sujet de veille : <b>Droit d'auteur pour les programme fait a l'aide d'IA</b>
-                <a href="projet/projetsPerso.html" class="button is-primary">Voir plus</a>
-              </div>
-            </div>
-          </div>
-        </div>
+    </div>
+    <div class="bento-card ">
+      <h1 class="Bento-title">SQL</h1>
+      <img src="image/competence/SQL.png" alt="JavaScript" class="is-small">
+  </div>
+  <div class="bento-card size-col-2">
+    <h1 class="Bento-title">Autres</h1>
+    <img src="image/competence/SQL.png" alt="JavaScript" class="is-small">
+</div>
+
+    </div>
+</section>
+
+<section class="InfoSection">
+  <h2 class="maintitle">Projet</h2>
+  <br>
+  <br>
+
+  <!-- Conteneur de cartes de compétences -->
+  <div class="bento-container">
+
+      <!-- Carte de compétence qui occupe 2 colonnes et 1 ligne -->
+      <div class="bento-card size-col-2">
+          <h1 class="Bento-title">Atelier profesionnalisation </h1>
+          <img src="image/competence/HTML5.png" alt="HTML5" class="is-small">
       </div>
+
+      <!-- Carte de compétence qui occupe 1 colonne et 2 lignes -->
+      <div class="bento-card">
+          <h1 class="Bento-title">Projet personnel</h1>
+          <img src="image/competence/CSS3.png" alt="CSS3" class="is-small">
+      </div>
+
+      <div class="bento-card size-col-3">
+        <h1 class="Bento-title">Profesionnel</h1>
+        <ul>
+          <li>Stage</li>
+          <li>Profesionnel</li>
+        </ul>
     </div>
+
+
+      
+</section>
+
+    
   </section>
-
-  <footer class="footer">
-    <div class="content has-text-centered">
-      <p>
-        <strong>Portfolio</strong> by Adrian Guichard. Le code source est sous licence <a href="http://opensource.org/licenses/mit-license.php">MIT</a>.
-      </p>
-    </div>
-  </footer>
-
-  <!-- JavaScript pour activer le burger menu -->
-  <script>
-    document.addEventListener('DOMContentLoaded', () => {
-      // Récupère tous les éléments de la classe navbar-burger
-      const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
-      // Vérifie si des éléments navbar-burger existent
-      if ($navbarBurgers.length > 0) {
-        // Ajoute un écouteur d'événement click à chaque élément navbar-burger
-        $navbarBurgers.forEach(el => {
-          el.addEventListener('click', () => {
-            // Récupère la cible à partir de l'attribut data-target
-            const target = el.dataset.target;
-            const $target = document.getElementById(target);
-            // Change la classe 'is-active' sur les éléments navbar-burger et navbar-menu
-            el.classList.toggle('is-active');
-            $target.classList.toggle('is-active');
-          });
-        });
-      }
-    });
-  </script>
 </body>
 </html>
