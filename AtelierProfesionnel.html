@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        fetch('navbar.php')
+            .then(response => response.text())
+            .then(data => {
+                document.body.insertAdjacentHTML('afterbegin', data);
+            });
+    </script>
+    <link rel="stylesheet" href="style.css">
+    <title>Atelier Profesionnel</title>
+</head>
+<body>
+    <section class="MainSection" id="begin" >
+        <h1 class="maintitle">Atelier Profesionnel</h1>
+        <br>
+        <h1 class="subtitle">4 Projets</h1>
+      </section>
+
+      <section class="InfoSection variante" id="Compétence">
+    
+        <div class="bento-container">
+            
+            <div class="bento-card ">
+                <h1 class="Bento-title">Mr Payet</h1>
+               
+                    <p>site vitrine avec CMS : Wordpress</p>
+                    <a href="projet/mrPayet.html">
+                    <button class="main-bouton">Plus d'information</button>
+                  </a>
+            </div>
+
+            <div class="bento-card ">
+                <h1 class="Bento-title">Application MP3</h1>
+               
+                    <p>Realisé sous Phython</p>
+                    <a href="projet/mp3.html">
+                    <button class="main-bouton">Plus d'information</button>
+                  </a>
+            </div>
+
+            <div class="bento-card ">
+                <h1 class="Bento-title">Lecture FluxRSS</h1>
+               
+                    <p>Realisé en PHP</p>
+                    <a href="projet/mp3.html">
+                    <button class="main-bouton">Plus d'information</button>
+                  </a>
+            </div>
+
+            <div class="bento-card size-col-3">
+                <h1 class="Bento-title">En Cours</h1>
+               
+                    <p>Logicel de gestion pharmacie [Avec Java et JavaFX]</p>
+                    <a href="projet/mp3.html">
+                    <button class="main-bouton">Plus d'information</button>
+                  </a>
+            </div>
+    
+    
+        </div>
+    </section>
+</body>
+</html>
