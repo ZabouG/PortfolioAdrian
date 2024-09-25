@@ -171,7 +171,7 @@ body {
 }
 
 /* Une bento-card occupe 1, 2, ou 3 lignes */
-.bento-card.size-row-1 {
+.bento-card  {
     grid-row: span 1;
 }
 .bento-card.size-row-2 {
@@ -234,4 +234,77 @@ body {
 .navbar a:hover {
     background: rgba(255, 255, 255, 0.1); /* Légère couleur au survol */
     text-decoration: underline;     /* Soulignement au survol */
+}
+/* Version mobile */
+@media (max-width: 768px) {
+    /* Réduire la taille de la police dans le body */
+    body {
+        font-size: medium; /* Taille de police plus petite */
+    }
+
+    /* Ajuster les styles de la section principale */
+    .MainSection {
+        padding: 5%; /* Réduire le padding */
+        height: auto; /* Ajuster la hauteur pour le contenu */
+    }
+
+    /* Ajuster les styles des titres */
+    .maintitle {
+        font-size: 2.5em; /* Réduire la taille du titre */
+    }
+
+    .subtitle {
+        font-size: 1.2em; /* Réduire la taille du sous-titre */
+    }
+
+    /* Ajuster les cartes bento pour qu'elles s'affichent en colonne */
+    .bento-container {
+        grid-template-columns: 1fr; /* Une seule colonne */
+    }
+
+    /* Ajuster les cartes bento pour qu'elles s'adaptent à la largeur */
+    .bento-card {
+        margin: 5%; /* Ajuster la marge pour moins d'espace entre les cartes */
+    }
+
+    /* Ajuster la taille des images */
+    .is-small {
+        width: 100px; /* Prendre toute la largeur */
+        height: auto; /* Garder les proportions */
+    }
+
+    /* Ajuster la taille du texte dans NumberInfo */
+    .NumberInfo {
+        font-size: 2em; /* Réduire la taille du texte pour l'adapter à un petit écran */
+    }
+
+    /* Ajuster les boutons */
+    .main-bouton, .secondary-bouton {
+        width: 100%; /* Prendre toute la largeur */
+        font-size: 1em; /* Réduire la taille de police */
+        padding: 10px; /* Ajuster le padding */
+    }
+
+    /* Réduire les marges et paddings des sections d'informations */
+    .InfoSection {
+        padding: 2%; /* Ajuster le padding */
+    }
+
+    /* Réduire les marges des titres dans les sections d'informations */
+    .maintitle {
+        margin: 10px 0; /* Ajuster la marge */
+    }
+
+    /* Ajuster les styles de la navbar pour mobile */
+    .navbar {
+        padding: 10px 15px; /* Réduire le padding */
+    }
+
+    .navbar ul {
+        flex-direction: column; /* Aligner les éléments en colonne */
+    }
+
+    .navbar li {
+        margin-bottom: 10px; /* Espacement entre les éléments */
+    }
 }
