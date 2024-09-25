@@ -4,12 +4,65 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>A propos</title>
+  <script>
+    fetch('navbar.php')
+        .then(response => response.text())
+        .then(data => {
+            document.body.insertAdjacentHTML('afterbegin', data);
+        });
+</script>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <section class="MainSection" >
     <h1 class="maintitle">A Propos</h1>
   </section>
-  
+
+  <section class="InfoSection variante">
+    <!-- Conteneur de cartes de compétences -->
+    <div class="bento-container">
+
+        <!-- Carte de compétence qui occupe 2 colonnes et 1 ligne -->
+        
+        <div class="bento-card ">
+            <h1 class="Bento-title">Age</h1>
+            <h1 class="NumberInfo">18</h1>
+        </div>
+
+        <div class="bento-card ">
+          <h1 class="Bento-title">Nombre de projets</h1>
+          <h1 class="NumberInfo">10</h1>
+          <button class="main-bouton"><a href="index.html#Projet" class="main-bouton">Voir les projets</a></button>
+      </div>
+
+      <div class="bento-card ">
+        <h1 class="Bento-title center">DEV-FULLSTACK</h1>
+    </div>
+
+    <div class="bento-card size-col-2">
+      <h1 class="Bento-title center">BTS SIO 2</h1>
+  </div>
+  <div class="bento-card size-col-1">
+    <h1 class="Bento-title center">SLAM</h1>
+</div>
+
+<div class="bento-card size-col-3">
+  <h1 class="Bento-title center ">En Cours</h1>
+  <h1 class="subtitle">Bac + 2</h1>
+</div>
+
+<div class="bento-card size-col-1 center">
+  <a href="https://www.linkedin.com/in/adrian-guichard-5a3b16308/" target="_blank">
+  <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" class="is-small" >
+</a>
+</div>
+<div class="bento-card size-col-2 ">
+  <a href="https://github.com/ZabouG" target="_blank">
+  <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" class="is-small" >
+</a>
+</div>
+</div>
+</section>
+
 </body>
 </html>
