@@ -265,10 +265,17 @@ body {
     }
 
     /* Ajuster les cartes bento pour qu'elles s'affichent en colonne */
-    .bento-container {
-        grid-template-columns: 1fr; /* Une seule colonne */
+    .bento-container { /* Une seule colonne */
+        grid-template-columns: repeat(2, 1fr);
     }
 
+    .bento-card.size-col-3 {
+        grid-column: span 1;
+    }
+
+    .bento-card.size-col-2 {
+        grid-column: span 1;
+    }
     /* Ajuster les cartes bento pour qu'elles s'adaptent à la largeur */
     .bento-card {
         margin: 5%; /* Ajuster la marge pour moins d'espace entre les cartes */
