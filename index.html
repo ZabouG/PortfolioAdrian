@@ -22,6 +22,7 @@
           document.getElementById('atelierPro').textContent = data.atelierPro;
           document.getElementById('projetPerso').textContent = data.projetPerso;
           document.getElementById('stage').textContent = data.stage;
+          document.getElementById('infoperso').textContent = data.info;
         })
         .catch(error => console.error('Erreur lors du chargement des données:', error));
     }
@@ -35,7 +36,7 @@
   <section class="MainSection" id="begin" >
     <h1 class="maintitle">Adrian Guichard</h1>
     <br>
-    <h1 class="subtitle">2ème année BTS SIO | Développeur Fullstack</h1>
+    <h1 class="subtitle" id="infoperso">.</h1>
     <a href="propos.html">
       <br>
       <button class="secondary-bouton">A propos</button>

@@ -4,6 +4,8 @@ body {
     margin: 0;
     padding: 0;
     font-size: large;
+    background: linear-gradient(135deg, rgb(21, 21, 21), rgb(8, 8, 8));
+
 }
 
 /* Styliser la section principale pour occuper toute la hauteur */
@@ -23,9 +25,12 @@ body {
 
 .is-small {
     width: 200px;
-    height: auto;
+    height: 200px;
 }
 
+.small-text{
+    font-size: medium;
+}
 /* Style pour le titre principal */
 .maintitle {
     font-size: 3em;
@@ -284,6 +289,10 @@ body {
     /* Ajuster la taille des images */
     .is-small {
         width: 100px; /* Prendre toute la largeur */
+        height: auto; /* Garder les proportions */
+    }
+    .is-medium{
+        width: 150px; /* Prendre toute la largeur */
         height: auto; /* Garder les proportions */
     }
 

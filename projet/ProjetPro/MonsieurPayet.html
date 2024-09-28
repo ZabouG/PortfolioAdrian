@@ -1,44 +1,82 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Présentation de mes projets</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../style.css">
+  <title>Adrian Guichard PortFolio</title>
+
+  <!-- Script to load navbar and dynamically update content -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Load the navbar
+        fetch('../../navbar.php')
+            .then(response => response.text())
+            .then(data => {
+                document.body.insertAdjacentHTML('afterbegin', data);
+            });
+
+        // Set project details
+        const nameProjet = "Site Mr Payet"
+        const nbPersonne = 3;
+        const Langage = "CMS : Wordpress";
+        const Temps = "3 Seance";
+        const Difficulté = "Pris en main de Wordpress.org et trouvé un moyen d'heberger le site, nous somme passé sur Wordpress.com et ainsi également rencontrer les limitation présente sur l'offre gratuit de wordpress.com ";
+
+
+        // Update the HTML content once the DOM is fully loaded
+        document.getElementById('nameProjet').textContent = nameProjet;
+        document.getElementById('nbPersonnne').textContent = nbPersonne;
+        document.getElementById('Langage').textContent = Langage;
+        document.getElementById('Temps').textContent = Temps;
+        document.getElementById('Difficulté').textContent = Difficulté;
+
+    });
+  </script>
+
 </head>
 <body>
-    <header>
-        <h1 class="title">Site mr Payet</h1>
-    </header>
+  <section class="MainSection" id="begin">
+    <h1 class="maintitle" id="nameProjet">Projet</h1>
+    <br>
+    <br>
+  </section>
 
-    <main>
-    <section class="section">
-        <div class="container">
-            <h2 class="subtitle">Caractéristiques du projet</h2>
-            <ul>
-                <li>Technologies utilisées: Wordpress</li>
-                <li>Temps de réalisation: 2/3 semaines</li>
-                <li>Objectif: Créer une site vitrine pour une confiserie</li>
-        </div>
-    </section>
+  <section class="InfoSection variante" id="Compétence">
 
-    <section class="section">
-        <div class="container">
-            <h2 class="subtitle">Partie 2: Explication</h2>
-            <!-- Your content for Partie 2 goes here -->
-            <p>Projet réalisé dans un carde d'apprentisage ou il fallait crée un site vitrin dans un cadre fictif </p>
-        </div>
-    </section>
+    <div class="bento-container">
+      <div class="bento-card">
+        <h1 class="Bento-title">Nb Personne</h1>
+        <h1 class="NumberInfo" id="nbPersonnne">0</h1> <!-- L'ID est utilisé pour la mise à jour -->
+      </div>
 
-    <section class="section">
-        <div class="container">
-            
-            <a class="button is-primary" href="" >Voir le site</a>
-        </div>
-    </section>
+      <div class="bento-card">
+        <h1 class="Bento-title">Langage Utilisé</h1>
+        <p id="Langage" class="small-text">.</p>
+      </div>
 
-    <footer>
-        <p>&copy; 2023 Adrian</p>
-    </footer>
+      <div class="bento-card">
+        <h1 class="Bento-title">Temps</h1>
+        <h1  id="Temps">0</h1>
+      </div>
+
+      <div class="bento-card">
+        <h1 class="Bento-title">Difficulté</h1>
+        <p class="small-text" id="Difficulté">Aucune</p>
+      </div>
+
+      <div class="bento-card  size-col-2">
+        <h1 class="Bento-title">Lien</h1>
+        <a href="https://btsconfisseriepayet.wordpress.com">
+        <button class="main-bouton"> Lien </button>
+      </a>
+      </div>
+
+      <div class="bento-card size-col-3">
+        <img id="picture" src="Image\Payet.png" alt="Image du projet MP3" class="is-small" />
+      </div>
+    </div>
+
+  </section>
 </body>
 </html>

@@ -21,6 +21,7 @@
           // Calcul du nombre total de projets (atelierPro + projetPerso + stage)
           const totalProjects = data.atelierPro + data.projetPerso + data.stage;
           document.getElementById('totalProjects').textContent = totalProjects;
+          document.getElementById('age').textContent = data.age;
         })
         .catch(error => console.error('Erreur lors du chargement des données:', error));
     }
@@ -42,7 +43,7 @@
       <!-- Carte pour l'âge -->
       <div class="bento-card">
         <h2 class="Bento-title">Âge</h2>
-        <p class="NumberInfo">18</p>
+        <p class="NumberInfo" id="age">0</p>
       </div>
 
       <!-- Carte pour le nombre total de projets -->
@@ -72,7 +73,7 @@
 
       <!-- Cartes pour les liens sociaux -->
       <div class="bento-card size-col-1 center">
-        <a href="https://www.linkedin.com/in/adrian-guichard-5a3b16308/" target="_blank">
+        <a href="https://www.linkedin.com/in/adrian-guichard-5a3b16308/" target="_blank" >
           <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" class="is-small" alt="LinkedIn" loading="lazy">
         </a>
       </div>
