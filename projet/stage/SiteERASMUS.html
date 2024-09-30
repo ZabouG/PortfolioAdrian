@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../style.css">
+  <title>Adrian Guichard PortFolio</title>
+
+  <!-- Script to load navbar and dynamically update content -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Load the navbar
+        fetch('../../navbar.php')
+            .then(response => response.text())
+            .then(data => {
+                document.body.insertAdjacentHTML('afterbegin', data);
+            });
+
+        // Set project details
+        const nameProjet = "Site ERAMUS"
+        const nbPersonne = 10;
+        const Langage = "CMS : Wordpress";
+        const Temps = "6 Semaine";
+        const Difficulté = "La plus grosse difficulté rencontré a été le fait de devoir travailler dans un groupe plus conséquent sur un seul et même sujet.";
+
+
+        // Update the HTML content once the DOM is fully loaded
+        document.getElementById('nameProjet').textContent = nameProjet;
+        document.getElementById('nbPersonnne').textContent = nbPersonne;
+        document.getElementById('Langage').textContent = Langage;
+        document.getElementById('Temps').textContent = Temps;
+        document.getElementById('Difficulté').textContent = Difficulté;
+
+    });
+  </script>
+
+</head>
+<body>
+  <section class="MainSection" id="begin">
+    <h1 class="maintitle" id="nameProjet">Projet</h1>
+    <br>
+    <br>
+  </section>
+
+  <section class="InfoSection variante" id="Compétence">
+
+    <div class="bento-container">
+      <div class="bento-card">
+        <h1 class="Bento-title">Nb Personne</h1>
+        <h1 class="NumberInfo" id="nbPersonnne">0</h1> <!-- L'ID est utilisé pour la mise à jour -->
+        <p class="small-text">+ un groupe d'étudiant allemand</p>
+      </div>
+
+      <div class="bento-card">
+        <h1 class="Bento-title">Langage Utilisé</h1>
+        <p id="Langage" class="small-text">.</p>
+      </div>
+
+      <div class="bento-card">
+        <h1 class="Bento-title">Temps</h1>
+        <h1  id="Temps">0</h1>
+      </div>
+
+      <div class="bento-card">
+        <h1 class="Bento-title">Difficulté</h1>
+        <p class="small-text" id="Difficulté">Aucune</p>
+      </div>
+
+      <div class="bento-card  size-col-2">
+        <h1 class="Bento-title">Lien</h1>
+        <a href="http://erasmus.fam-winkler.org">
+        <button class="main-bouton"> Lien </button>
+      </a>
+      <p class="small-text">Le site n'es plus disponible</p>
+      </div>
+
+      <div class="bento-card size-col-3">
+        <h1 class="Bento-title">Description</h1>
+       <p class="small-text">Projet ERASMUS qui avais pour objetive de crée un site wordpress avec un groupe d'étudiant allemand (2semaine a la reunion), (2semaine en allmagne) j'ai eu l'oportunité de me rendre en allemange pour réalisé 2semaines de stage dans le carde de se projet.</p>
+      </div>
+    </div>
+
+  </section>
+</body>
+</html>
