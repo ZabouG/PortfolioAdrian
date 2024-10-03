@@ -1,5 +1,5 @@
 <nav class="navbar">
     <ul>
-        <li><a href="https://zaboug.github.io/PortfolioAdrian/">Accueil</a></li>
+        <li><a href="/PortfolioAdrian/index.html">Accueil</a></li>
     </ul>
 </nav>
